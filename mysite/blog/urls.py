@@ -2,6 +2,8 @@ from django.urls import path
 from . import views
 from .views import post_list , post_detail
 
+from django.views.generic import RedirectView
+
 
 app_name = 'blog'
 
@@ -11,4 +13,5 @@ urlpatterns = [
     path('<int:year>/<int:month>/<int:day>/<slug:post>/',
     post_detail,
     name='post_detail'),
+    path ('favicon.ico', RedirectView.as_view(url='/static/favicon.ico'))
     ]

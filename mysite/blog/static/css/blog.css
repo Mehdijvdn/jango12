@@ -1,9 +1,6 @@
 body { 
-    
-    margin: right;
-    width: 0%;
-    border: 3px solid green;
-    padding: px;
+    margin:0;
+    padding:0;
     font-family:helvetica, sans-serif; 
 }
 
@@ -24,9 +21,9 @@ h2 {
 }
 
 #content { 
-    float:down;
-    width:67%;
-    padding:0 0 0 34px; 
+    float:left;
+    width:60%;
+    padding:0 0 0 30px; 
 }
 
 #sidebar { 
@@ -86,10 +83,10 @@ input[type=submit] {
     padding:10px;
 }
 .comment:nth-child(even) {
-    background:#a9cdd8;
+    background:#efefef;
 }
 .comment .info {
     font-weight:bold;
-    font-size:16px;
-    color:rgb(206, 29, 29);
+    font-size:12px;
+    color:#666;
 }
