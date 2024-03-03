@@ -13,5 +13,7 @@ urlpatterns = [
     path('<int:year>/<int:month>/<int:day>/<slug:post>/',
     post_detail,
     name='post_detail'),
-    path ('favicon.ico', RedirectView.as_view(url='/static/favicon.ico'))
+    path ('favicon.ico', RedirectView.as_view(url='/static/favicon.ico')),
+    
+    path('<int:post_id>/share/',views.post_share, name='post_share'),
     ]
